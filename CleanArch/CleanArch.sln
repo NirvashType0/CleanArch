@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "Cle
 		{00BBA141-58EC-4DF5-AED7-531B26117B6D} = {00BBA141-58EC-4DF5-AED7-531B26117B6D}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{83C637E9-C3D9-4EB6-8271-5FC70A671D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{DD37DCB4-BFAA-4196-9602-EDE7F285ADE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD37DCB4-BFAA-4196-9602-EDE7F285ADE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD37DCB4-BFAA-4196-9602-EDE7F285ADE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C637E9-C3D9-4EB6-8271-5FC70A671D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C637E9-C3D9-4EB6-8271-5FC70A671D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C637E9-C3D9-4EB6-8271-5FC70A671D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C637E9-C3D9-4EB6-8271-5FC70A671D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{A069C35F-52F3-42DB-99C8-8DE00CF6031C} = {59F5DC37-8B0E-47CE-BEA2-88CC70D95FDC}
 		{00BBA141-58EC-4DF5-AED7-531B26117B6D} = {971156F9-0D84-406A-9975-63A83923913E}
 		{DD37DCB4-BFAA-4196-9602-EDE7F285ADE1} = {3F424E94-C27B-4E96-BB36-1FDAA400699D}
+		{83C637E9-C3D9-4EB6-8271-5FC70A671D18} = {B917BE7F-1F2D-4F59-86FC-F7B455D60C9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A33B12C-0DE7-4238-9FCB-FB0DA47031F0}
