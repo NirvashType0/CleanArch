@@ -29,7 +29,7 @@ namespace CleanArch.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<S10290D0Context>(options => options.UseDb2(Configuration["ConnectionStrings:Db2Connection"], p => { p.SetServerInfo(IBMDBServerType.AS400); p.UseRowNumberForPaging(); }));
+            services.AddDbContext<S10290D0Context>(options => options.UseDb2(Configuration.GetConnectionString("Db2Connection"), p => { p.SetServerInfo(IBMDBServerType.AS400); p.UseRowNumberForPaging(); }));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             RegisterServices(services);
         }
