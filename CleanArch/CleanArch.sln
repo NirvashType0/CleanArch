@@ -22,7 +22,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "Cle
 		{00BBA141-58EC-4DF5-AED7-531B26117B6D} = {00BBA141-58EC-4DF5-AED7-531B26117B6D}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{83C637E9-C3D9-4EB6-8271-5FC70A671D18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{83C637E9-C3D9-4EB6-8271-5FC70A671D18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00BBA141-58EC-4DF5-AED7-531B26117B6D} = {00BBA141-58EC-4DF5-AED7-531B26117B6D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
