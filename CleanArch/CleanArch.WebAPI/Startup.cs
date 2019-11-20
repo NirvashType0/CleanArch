@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using CleanArch.Infra.Data.Context;
 using IBM.EntityFrameworkCore;
 using IBM.EntityFrameworkCore.Storage.Internal;
+using CleanArch.Infra.IoC;
 
 namespace CleanArch.WebAPI
 {
@@ -30,6 +31,7 @@ namespace CleanArch.WebAPI
         {
             services.AddDbContext<S10290D0Context>(options => options.UseDb2(Configuration["ConnectionStrings:Db2Connection"], p => { p.SetServerInfo(IBMDBServerType.AS400); p.UseRowNumberForPaging(); }));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +49,11 @@ namespace CleanArch.WebAPI
 
             app.UseHttpsRedirection();
             app.UseMvc();
+        }
+
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }
